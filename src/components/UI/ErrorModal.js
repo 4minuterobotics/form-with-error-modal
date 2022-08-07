@@ -28,7 +28,7 @@ const ModalOverlay = (props) => {
 
 const ErrorModal = (props) => {
 	return (
-		<div>
+		<React.Fragment>
 			{/* this function porting objects. It takes 2 inputs, 
     1.  the node component being ported 
     2.  a pointer to the real DOM where this component should be rendered */}
@@ -44,7 +44,7 @@ const ErrorModal = (props) => {
 				/>,
 				document.getElementById("overlay-root")
 			)}
-		</div>
+		</React.Fragment>
 	);
 };
 

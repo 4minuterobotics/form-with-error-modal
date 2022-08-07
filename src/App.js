@@ -28,10 +28,10 @@ function App(props) {
 	}
 
 	return (
-		<div>
+		<React.Fragment>
 			<AddUser onAddUser={addUserHandler} />
 			<UsersList users={usersList} onDeleteUser={deleteUserHandler} />
-		</div>
+		</React.Fragment>
 	);
 }
 

@@ -7,12 +7,12 @@ function ListItem(props) {
 	}
 
 	return (
-		<div>
+		<React.Fragment>
 			<li>
 				{props.name} ({props.age} years old){" "}
 				<button onClick={handleDelete}>Delete</button>
 			</li>
-		</div>
+		</React.Fragment>
 	);
 }
 export default ListItem;
